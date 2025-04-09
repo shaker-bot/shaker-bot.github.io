@@ -17,7 +17,8 @@ const app = express();
   }
 
   // Serve on port 5000
-  const port = 5000;
+  // Serve on port 8080 instead since Mac be bugging
+  const port = 8080;
   
   server.on('error', (e: any) => {
     if (e.code === 'EADDRINUSE') {
